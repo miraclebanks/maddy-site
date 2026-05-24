@@ -15,6 +15,21 @@ links?.querySelectorAll("a").forEach((a) => {
   });
 });
 
+// Theme toggle
+const themeBtn = document.querySelector(".nav__theme");
+function syncThemeLabel() {
+  if (!themeBtn) return;
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  themeBtn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+}
+themeBtn?.addEventListener("click", () => {
+  const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+  syncThemeLabel();
+});
+syncThemeLabel();
+
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();

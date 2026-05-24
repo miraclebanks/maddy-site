@@ -11,6 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (sysDark ? "dark" : "light"));
+    })();
+  </script>
 </head>
 <body>
   <header class="nav">
@@ -18,14 +26,25 @@
       <span class="nav__logo-mark">✿</span>
       <span class="nav__logo-text">Cakes &amp; Madness</span>
     </a>
-    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav__links">
-      <a href="#about">About</a>
-      <a href="#cakes">Cakes</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="nav__right">
+      <button class="nav__theme" type="button" aria-label="Toggle theme">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
@@ -163,7 +182,7 @@
         </p>
         <ul class="contact__list">
           <li><strong>Email</strong> <a href="mailto:hello@cakesandmadness.com">hello@cakesandmadness.com</a></li>
-          <li><strong>Instagram</strong> <a href="https://instagram.com/" target="_blank" rel="noopener">@cakesandmadness</a></li>
+          <li><strong>Instagram</strong> <a href="https://instagram.com/cakesandmadness" target="_blank" rel="noopener">@cakesandmadness</a></li>
           <li><strong>Pickup</strong> by appointment, somewhere cozy</li>
         </ul>
       </div>
@@ -192,6 +211,7 @@
 
   <footer class="footer">
     <p>© <span id="year"></span> Cakes &amp; Madness · baked with love</p>
+    <p class="footer__sig">Powered by Miracles</p>
   </footer>
 
   <script src="script.js"></script>
