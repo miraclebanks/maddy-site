@@ -111,9 +111,10 @@ img { max-width: 100%; display: block; }
   font-variation-settings: "SOFT" 100;
 }
 .nav__logo-mark {
-  color: var(--lavender);
-  font-size: 22px;
-  transform: translateY(1px);
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
 }
 
 .nav__right {
