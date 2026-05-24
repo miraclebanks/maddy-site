@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cakes & Madness — handmade cakes for every occasion</title>
+  <meta name="description" content="Cakes & Madness — handmade celebration cakes, custom orders, and sweet little treats baked with love." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark">✿</span>
+      <span class="nav__logo-text">Cakes &amp; Madness</span>
+    </a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#cakes">Cakes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">handmade · small batch · made with love</p>
+        <h1 class="hero__title">
+          A little bit of <em>cake</em>,<br />
+          a little bit of <em>madness</em>.
+        </h1>
+        <p class="hero__lede">
+          Celebration cakes, custom bakes, and sweet little experiments —
+          baked one at a time in a tiny kitchen for the people you love.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Order a cake</a>
+          <a class="btn btn--ghost" href="#cakes">See the menu</a>
+        </div>
+      </div>
+      <div class="hero__decor" aria-hidden="true">
+        <div class="blob blob--green"></div>
+        <div class="blob blob--blue"></div>
+        <div class="blob blob--lavender"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="about__photo" aria-hidden="true">
+        <!-- Swap this div for an <img src="..." alt="..."> when you have a photo -->
+        <div class="photo-placeholder photo-placeholder--portrait">
+          <span>your photo here</span>
+        </div>
+      </div>
+      <div class="about__copy">
+        <p class="section__eyebrow">about the baker</p>
+        <h2 class="section__title">Hi, I'm Maddy.</h2>
+        <p>
+          I started baking out of my kitchen because I wanted to make cakes
+          that taste like they came from someone who actually <em>likes</em> you.
+          No giant industrial bakery vibes. No mystery frosting. Just real
+          butter, real fruit, and a little bit of madness.
+        </p>
+        <p>
+          Every cake is made to order, decorated by hand, and built around
+          whatever you're celebrating — birthdays, weddings, Tuesdays,
+          breakups, you name it.
+        </p>
+        <ul class="about__list">
+          <li><span>🌿</span> small batch &amp; seasonal</li>
+          <li><span>🫐</span> real ingredients, no shortcuts</li>
+          <li><span>💌</span> custom designs welcome</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CAKES / GALLERY -->
+    <section id="cakes" class="cakes">
+      <header class="section__head">
+        <p class="section__eyebrow">the menu</p>
+        <h2 class="section__title">A few favorites</h2>
+        <p class="section__lede">
+          A rotating cast — flavors change with the seasons and my mood.
+          Don't see what you want? Just ask.
+        </p>
+      </header>
+
+      <div class="cake-grid">
+        <article class="cake">
+          <div class="cake__photo cake__photo--1" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Earl Grey &amp; Lavender</h3>
+            <p>Earl grey infused sponge, honey buttercream, candied lavender.</p>
+            <p class="cake__price">from $48</p>
+          </div>
+        </article>
+
+        <article class="cake">
+          <div class="cake__photo cake__photo--2" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Pistachio Cardamom</h3>
+            <p>Toasted pistachio cake, cardamom cream, rose petal dust.</p>
+            <p class="cake__price">from $52</p>
+          </div>
+        </article>
+
+        <article class="cake">
+          <div class="cake__photo cake__photo--3" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Brown Butter Birthday</h3>
+            <p>Classic vanilla, brown butter frosting, rainbow sprinkles, always.</p>
+            <p class="cake__price">from $42</p>
+          </div>
+        </article>
+
+        <article class="cake">
+          <div class="cake__photo cake__photo--4" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Blueberry Lemon</h3>
+            <p>Lemon olive oil sponge, fresh blueberry jam, mascarpone whip.</p>
+            <p class="cake__price">from $46</p>
+          </div>
+        </article>
+
+        <article class="cake">
+          <div class="cake__photo cake__photo--5" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Dark Chocolate &amp; Olive Oil</h3>
+            <p>Deep chocolate, flaky salt, a swirl of olive oil ganache.</p>
+            <p class="cake__price">from $50</p>
+          </div>
+        </article>
+
+        <article class="cake">
+          <div class="cake__photo cake__photo--6" aria-hidden="true"></div>
+          <div class="cake__body">
+            <h3>Strawberries &amp; Cream</h3>
+            <p>Vanilla bean sponge, roasted strawberry jam, soft whipped cream.</p>
+            <p class="cake__price">from $46</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact__copy">
+        <p class="section__eyebrow">say hi</p>
+        <h2 class="section__title">Let's make something sweet.</h2>
+        <p>
+          Tell me a little about what you're dreaming up — the occasion,
+          the date, roughly how many people, and any flavors you love (or
+          hate). I'll get back to you within a day or two.
+        </p>
+        <ul class="contact__list">
+          <li><strong>Email</strong> <a href="mailto:hello@cakesandmadness.com">hello@cakesandmadness.com</a></li>
+          <li><strong>Instagram</strong> <a href="https://instagram.com/" target="_blank" rel="noopener">@cakesandmadness</a></li>
+          <li><strong>Pickup</strong> by appointment, somewhere cozy</li>
+        </ul>
+      </div>
+
+      <form class="contact__form" action="mailto:hello@cakesandmadness.com" method="post" enctype="text/plain">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Event date</span>
+          <input type="date" name="date" />
+        </label>
+        <label>
+          <span>Tell me about the cake</span>
+          <textarea name="details" rows="5" placeholder="Occasion, flavors, how many people, vibe…" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send my request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Cakes &amp; Madness · baked with love</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
